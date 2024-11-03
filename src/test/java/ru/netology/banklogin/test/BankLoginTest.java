@@ -24,7 +24,7 @@ public class BankLoginTest {
 
     @BeforeEach
     void setUp() {
-        loginPage = open("https://localhost:9999", LoginPage.class);
+        loginPage = open("http://0.0.0.0:9999", LoginPage.class);
     }
 
     @Test
