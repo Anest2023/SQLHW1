@@ -24,7 +24,7 @@ public class BankLoginTest {
 
     @BeforeEach
     void setUp() {
-        loginPage = open("http://0.0.0.0:9999", LoginPage.class);
+        loginPage = open("http://localhost:9999", LoginPage.class);
     }
 
     @Test
@@ -43,7 +43,7 @@ public class BankLoginTest {
     void shouldGetErrorNotificationIfLoginWithRandomUserWithoutAddingToBase() {
         var authInfo = DataHelper.generateRandomUser();
         loginPage.login(authInfo);
-        loginPage.verifyErrorNotification("Ошибка! \nНеверноуказан логин или пароль");
+        loginPage.verifyErrorNotification("Ошибка! \nНеверно указан логин или пароль");
     }
 
 }
