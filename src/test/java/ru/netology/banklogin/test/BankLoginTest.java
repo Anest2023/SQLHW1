@@ -14,6 +14,7 @@ public class BankLoginTest {
 
    @AfterEach
    void tearDown() {
+
        cleanAuthCodes();
    }
 
