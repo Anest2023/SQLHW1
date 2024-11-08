@@ -18,7 +18,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Start SUT
-        run: java -jar ./artifacts/app-deadline.jar
+        run: java -jar ./artifacts/app-deadline.jar &
 
       - name: Container start
         uses: hoverkraft-tech/compose-action@v2.0.1
